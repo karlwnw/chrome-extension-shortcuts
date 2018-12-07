@@ -17,7 +17,7 @@ function focusNextLink() {
 }
 
 
-let $globalRedditLinks = $('.sitetable a.comments');
+let $globalRedditLinks = $('a[data-click-id="comments"]');
 let globalRedditLength = $globalRedditLinks.length;
 let globalRedditIndex = 0;
 
