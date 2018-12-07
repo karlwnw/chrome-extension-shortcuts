@@ -12,7 +12,6 @@
              "matches": ["*://*/*"],
              "js": ["jquery-3.3.1.slim.min.js", "content_scripts/content_script.js"]
         },
-        // Add special scripts for some websites for which the default behavior does not work
         {
              "matches": ["https://www.google.com/*", "https://www.google.fr/*"],
              "js": ["jquery-3.3.1.slim.min.js", "content_scripts/google.js"]
@@ -34,12 +33,6 @@
              "matches": ["https://www.youtube.com/*"],
              "js": ["jquery-3.3.1.slim.min.js", "content_scripts/youtube.js"]
         }
-        // ----------------------------
-        // Gmail already has its own shortcuts (needs to be activated in settings)
-        // See https://support.google.com/mail/answer/6594
-        // Inbox up/down navigation : j / k or arrows up / down
-        // Search : /
-        // Back to threadlist: u
     ],
     "browser_action": {
       "default_popup": "browser_action.html"
